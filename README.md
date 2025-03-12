@@ -42,7 +42,7 @@ Follow these steps to deploy the application:
 
 1. **Clone the Repository:**
 
-       git clone <repository-url>
+       git clone https://github.com/alflokken/entra-vid-tf
 
 2. **Initialize Terraform:**
 
