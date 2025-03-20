@@ -87,6 +87,11 @@ resource "azurerm_windows_web_app" "app_service" {
     "VerifiedID__matchConfidenceThreshold"         = "70"
     "VerifiedID__updateGuestUserProfilefromClaims" = "false"
   }
+  lifecycle {
+    ignore_changes = [
+      site_config[0].virtual_application
+    ]
+  }
 }
 
 #  Deploy code from public repo
